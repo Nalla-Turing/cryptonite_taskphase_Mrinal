@@ -65,6 +65,12 @@ Flag:- `pwn.college{oQ74hBny-1vv8AKZMX4HfMkc3SJ.dZTOwUDL0MTO0czW}`
 <br><br>
 
 ## Challenge-8 Hidden files
+`ls` doesn't show all the files in a directory.
+files starting with `.` will be saved as a hidden file.To see them u need to use the command `ls -a directory`
+
+For the challenge do `ls -a /` to find the hidden directories in / and then use `cat` with file to gte your key
+
+File:- `pwn.college{4qEIRxPPtwU0iV7DgFKkpbk9-Gh.dBTN4QDL0MTO0czW}`
 <br><br>
 
 ##
