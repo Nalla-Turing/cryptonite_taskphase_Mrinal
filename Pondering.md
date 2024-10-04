@@ -100,4 +100,4 @@ Challenge:-
     So i make a new directory called a
     the three character absolute path can be `~/a`
 
-    Flag:- `pwn.college{ANg1_Fy8DtUezjcZFBcsLPRCzrd.dNzM4QDL0MTO0czW}`
+Flag:- `pwn.college{ANg1_Fy8DtUezjcZFBcsLPRCzrd.dNzM4QDL0MTO0czW}`
