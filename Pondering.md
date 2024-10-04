@@ -80,3 +80,24 @@ then `./run` to run the command in the challenge directory itself
 
 Flag `pwn.college{IGUjlJUI5kWbfxGT48Giicqi7mW.dFTN1QDL0MTO0czW}`
 <br><br> 
+
+## Final Challenge Home Sweet Home
+Things learnd:-
+    Every used has a home directory stored as in the format `/home/hacker` where `/home` is the home directory with all the primary data of different users and `/hacker` being the user
+
+    This home directory is shown as `~`, thus signifying our path starting with the home directory.
+
+    Expanding `~/~/~` only expands the first ~
+
+    cd uses ~ as default if no argument is given
+
+Challenge:- 
+    So to complete the challenge, I need to know what directories are available in the home directory and if i can add any directory in it?
+
+    Source used Chatgpt
+    `ls ~` to find sub directories
+    ` mkdir ~/newdir` to make new directories
+    So i make a new directory called a
+    the three character absolute path can be `~/a`
+
+    Flag:- `pwn.college{ANg1_Fy8DtUezjcZFBcsLPRCzrd.dNzM4QDL0MTO0czW}`
