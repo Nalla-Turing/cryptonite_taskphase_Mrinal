@@ -42,3 +42,31 @@ I do that and find that the path is same as before
 Flag `pwn.college{0jR3N7yIoNp9FwfdgPnjQcqYVyg.ddDN1QDL0MTO0czW}`
 <br><br>
 
+## Challenge-5 Position yet elsewhere
+Challenge was same as before, thus done in the same way
+
+Flag `pwn.college{c9gi4uuKAXXG6HwQDjPif89DYNu.dhDN1QDL0MTO0czW}`
+<br><br>
+
+## Challenge-6 Implicit relative Paths
+source -  Chatgpt
+Implicit path are the path directories that start from your current directory itself.
+It totally depends on your `current working directory (cwd)`.So rather than you starting from the absolute root `/` you can directly command the cmd to start from the directory name itself
+
+For the challenge I move the the directory to / and then write the `challenge/run` command. Allowing me to inititae the command without using the absolute path
+
+Flag `pwn.college{wJmL-UanGRk_NeScg1QsnOKFEQE.dlDN1QDL0MTO0czW}`
+<br><br>
+
+## Challenge-7 Explicit relatives paths
+As shown in the given information what i understood was we have to go to the proper directory and `.` implicit entry to command our terminal to use the current directory to run the program we ask it to
+
+So i go to `cd /` directory
+
+Then i go to use `./challenge/run` to ask terminal to complete the challenge
+
+Flag `pwn.college{0Gr5aUjN1_EQxkAHACZdj302ASP.dBTN1QDL0MTO0czW}`
+<br><br>
+
+## Challenge-8 implicit relative path
+<br><br>
