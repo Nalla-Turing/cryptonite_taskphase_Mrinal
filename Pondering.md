@@ -72,8 +72,8 @@ Flag `pwn.college{0Gr5aUjN1_EQxkAHACZdj302ASP.dBTN1QDL0MTO0czW}`
 Here we learn about a very important safety measure in Linux.
 Whenever we try to use naked programs in our directory, it rather than searching in the current directory searches up from the first layer directory.
 
-> why is important? `#FFA500`
-> `#FFA500` Because if there is some other file with the same name as what we want to run in a upper layer, it will execute in place of what we want
+> why is important?
+> Because if there is some other file with the same name as what we want to run in a upper layer, it will execute in place of what we want
 
 So for the solution change directory `cd /challenge`
 then `./run` to run the command in the challenge directory itself
