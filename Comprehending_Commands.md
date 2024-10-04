@@ -20,13 +20,13 @@ Here we searching for the file in the absolute directory rather than jut hoping 
 Flag `pwn.college{0wHVQ7ryo5CBhFfK0mCrBuSK7Hb.dlTM5QDL0MTO0czW}`
 <br><br>
 
-# Challenge-3 more catting practice
+## Challenge-3 more catting practice
 Same stuff as before with just a new absolute path laready given
 
 Flag `pwn.college{UZJ5HO2mcpfxEQdmC3fak7vXrME.dBjM5QDL0MTO0czW}`
 <br><br>
 
-# Challenge-4 grepping for a needle in a haystack
+## Challenge-4 grepping for a needle in a haystack
 Sometimes cat files can be very large, while we may need a single or multiple lines.
 For such time we used `grep` command
 It gives us the relevant line matching the pattern from a root file
@@ -40,7 +40,7 @@ For the challenge i do the command `grep pwn.college /challenge/data.txt`
 Flag:- `pwn.college{QvZTEv0S9NYdiOTdcfJmasI_JsR.ddTM4QDL0MTO0czW}`
 <br><br>
 
-# Listing files
+## Challenge-5 Listing files
 Here learn to use the aforementioned `ls` command used to find contents inside a directory or a path
 
 For the challenge I did `ls \challenge` to find the different files and then run the command after finding it
@@ -48,5 +48,33 @@ For the challenge I did `ls \challenge` to find the different files and then run
 Flag `pwn.college{09D_QR_woFg9cKODMKABWi8UowT.dhjM4QDL0MTO0czW}`
 <br><br>
 
-#
+## Challenge-6 Touching files :0
+Here we learn to make new files using `touch` command.
+Can be used to make files in  the current file or in a path
+Commands were simple, nothing special needed
+
+Flag:- `pwn.college{kH4QtesRtQT1ICQq0JBw_JCWCO6.dBzM4QDL0MTO0czW}`
+<br><br>
+
+## Challenge-7 Removing Files
+`rm` command is used to remove files
+
+`ls` command to check the contents and then `rm` command to run it
+
+Flag:- `pwn.college{oQ74hBny-1vv8AKZMX4HfMkc3SJ.dZTOwUDL0MTO0czW}`
+<br><br>
+
+## Challenge-8 Hidden files
+<br><br>
+
+##
+<br><br>
+
+##
+<br><br>
+
+##
+<br><br>
+
+##
 <br><br>
