@@ -21,7 +21,7 @@ Flag `pwn.college{0wHVQ7ryo5CBhFfK0mCrBuSK7Hb.dlTM5QDL0MTO0czW}`
 <br><br>
 
 ## Challenge-3 more catting practice
-Same stuff as before with just a new absolute path laready given
+Same stuff as before with just a new absolute path already given
 
 Flag `pwn.college{UZJ5HO2mcpfxEQdmC3fak7vXrME.dBjM5QDL0MTO0czW}`
 <br><br>
@@ -73,7 +73,29 @@ For the challenge do `ls -a /` to find the hidden directories in / and then use 
 File:- `pwn.college{4qEIRxPPtwU0iV7DgFKkpbk9-Gh.dBTN4QDL0MTO0czW}`
 <br><br>
 
-##
+## Challenge-9 An Epic FileSystem Quest
+So this one is taking is taking a time consuming but here we go.
+As the hint suggested, i canged my directory to `cd /`, taking me to the base of this drectory.
+Then using `ls -a` to look for all the files present in the directory I found the TRACE file and `cat TRACE` gave me the next directory `The next clue is in: /usr/share/javascript/mathjax/unpacked/jax/output/SVG/fonts/Gyre-Pagella/Arrows`
+
+Entering the directory, I agin `ls -a` to find the items in  the direvtory finding the WHSIPER file which i `cat` to find the next set of clues giving me the next directory and a hint ` the file starts with .`
+
+Using the same methods as before the set of clues i get is
+    Yahaha, you found me!
+    The next clue is in: /opt/pwndbg/.venv/lib/python3.8/site-packages/sortedcontainers-2.4.0.dist-info
+
+    The next clue is **delayed** --- it will not become readable until you enter the directory with 'cd'.
+
+They asking me to do the same thing i had been doing so far.Next step I found bunch of files but nothing that says clue. So idecide to `cat` every file one at a time. Luxcky I got DOSSIER had the clue. Next clue
+    The next clue is in: /opt/pwndbg/.venv/lib/python3.8/site-packages/sortedcontainers-2.4.0.dist-info
+
+    The next clue is **delayed** --- it will not become readable until you enter the directory with 'cd'.
+
+Ok so i an't cd into the directory, but I cansee what's in the directory just from here. So i do `ls /usr/share/racket/pkgs/htdp-doc/teachpack/htdp`, I find the clue as CUE-TRAPPED, so i access the file using the entire directory like `cat /usr/share/racket/pkgs/htdp-doc/teachpack/htdp` and I get the clue. 
+
+Few more steps identical to these ones and I get the flag.
+
+Flag `pwn.college{Ap7VHV6dFQA84FX2QLvMqZ8Q6As.dljM4QDL0MTO0czW}`
 <br><br>
 
 ##
