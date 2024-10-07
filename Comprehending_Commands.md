@@ -98,7 +98,13 @@ Few more steps identical to these ones and I get the flag.
 Flag `pwn.college{Ap7VHV6dFQA84FX2QLvMqZ8Q6As.dljM4QDL0MTO0czW}`
 <br><br>
 
-##
+## Challenge-10 making directories
+We learn that `mkdir` is used to make new directory inside your current directory
+NOw to complete the challenge we have to create a new directory inside a directory temp
+So as mentioned i jsut use `mkdir /tmp/pwn`
+and then `touch /tmp/pwn/college` to complete the challenge.
+
+Flag `pwn.college{crxGzgt2-oW9p3gC2yAs2eW7--U.dFzM4QDL0MTO0czW}`
 <br><br>
 
 ##
