@@ -87,9 +87,9 @@ Using the same methods as before the set of clues i get is
     The next clue is **delayed** --- it will not become readable until you enter the directory with 'cd'.
 
 They asking me to do the same thing i had been doing so far.Next step I found bunch of files but nothing that says clue. So idecide to `cat` every file one at a time. Luxcky I got DOSSIER had the clue. Next clue
-    The next clue is in: /opt/pwndbg/.venv/lib/python3.8/site-packages/sortedcontainers-2.4.0.dist-info
+    The next clue is in: /usr/share/racket/pkgs/htdp-doc/teachpack/htdp
 
-    The next clue is **delayed** --- it will not become readable until you enter the directory with 'cd'.
+    Watch out! The next clue is **trapped**. You'll need to read it out without 'cd'ing into the directory; otherwise, the clue will self destruct!
 
 Ok so i an't cd into the directory, but I cansee what's in the directory just from here. So i do `ls /usr/share/racket/pkgs/htdp-doc/teachpack/htdp`, I find the clue as CUE-TRAPPED, so i access the file using the entire directory like `cat /usr/share/racket/pkgs/htdp-doc/teachpack/htdp` and I get the clue. 
 
