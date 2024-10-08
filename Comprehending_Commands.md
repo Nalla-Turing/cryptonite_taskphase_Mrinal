@@ -119,7 +119,7 @@ Chatgpt'ed the find command and found `/` argument is what is should use
 
 Used `find / -name flag` to find all the flag files startig from root directiry.
 got this output
-![Alt Text](image.png)
+![Alt Text](Output1.png)
 
 Now comes the confusin part. I try find if any of the directories have the flag by writing `ls /directioyr`.
 Some of the directories have some fkag name files with .c .o or .py extension
