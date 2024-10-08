@@ -135,5 +135,15 @@ Now used ` cat /usr/share/help/ru/flag`
 flag `pwn.college{AcjcGvYDg3hYEHzjfL2cTNAXfKh.dJzM4QDL0MTO0czW}`
 <br><br>
 
-##
-<br><br>
+## Challenge-12 Linking Files
+Here I learn about hard and soft links in linux.
+
+Hard links are like saying we have multiple different links that gives you acess to the same file.
+Soft links are files whose only job is to take you the original destination of the link
+
+Soft links are also symlinks and are made by using `ln -s /path/whose/link/needed /path/of/link`
+
+For the challenge since /flag just tries to read out what's in `/home/hacker/not-the-flag` which doesn't even exist.
+I came around it by making /home/hacker/not-the-flag the symlink to /flag
+
+Getting the flag `pwn.college{8pnth2nOC5-7GrAnRNfSaML_4d6.dlTM1UDL0MTO0czW}`
