@@ -12,6 +12,11 @@ flag `pwn.college{ooFZDIDnfLWrHYxEXpiWrf53Z4J.dRjM5QDL0MTO0czW}`
 <br><br>
 
 ## Challenge-2 Complex Usage
+This challenge gives us an idea of how in some documentations we have information about commands which have aguments for arguements
+
+So following the Documentation
+`/challenge/challenge --printfile /flag` to get the flag
+flag `pwn.college{wWnBNeOLsh43sMsudClT99aiJBT.dVjM5QDL0MTO0czW}`
 <br><br>
 
 ## Challenge-3 Reading Manuals
