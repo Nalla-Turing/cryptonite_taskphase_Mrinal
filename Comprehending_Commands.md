@@ -107,7 +107,32 @@ and then `touch /tmp/pwn/college` to complete the challenge.
 Flag `pwn.college{crxGzgt2-oW9p3gC2yAs2eW7--U.dFzM4QDL0MTO0czW}`
 <br><br>
 
-##
+## Challenge-11 findig files\
+OK this was a good one had me at grip for a while
+Now as the hint suggested I started with doing
+
+`find -name file`
+expecting it to search file in every directory in the filesystem, but got the no such directory output.
+On searching it turns out when given with no location, by default it only searches starting in the current directory.
+
+Chatgpt'ed the find command and found `/` argument is what is should use
+
+Used `find / -name flag` to find all the flag files startig from root directiry.
+got this output
+![Alt Text](image.png)
+
+Now comes the confusin part. I try find if any of the directories have the flag by writing `ls /directioyr`.
+Some of the directories have some fkag name files with .c .o or .py extension
+Tried to run them but quickly found out that's the worng approach.
+So again used chatgpt'ed the function to find out the type of directory i have
+
+It's the `file` function
+So i use it on each directory and found the file directory with the txt extension
+    /usr/share/help/ru/flag: ASCII text, with no line terminators
+
+Now used ` cat /usr/share/help/ru/flag`
+
+flag `pwn.college{AcjcGvYDg3hYEHzjfL2cTNAXfKh.dJzM4QDL0MTO0czW}`
 <br><br>
 
 ##
