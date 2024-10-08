@@ -121,7 +121,7 @@ Used `find / -name flag` to find all the flag files startig from root directiry.
 got this output
 ![Alt Text](Output1.png)
 
-Now comes the confusin part. I try find if any of the directories have the flag by writing `ls /directioyr`.
+Now comes the confusin part. I try find if any of the directories have the flag by writing `ls /directory`.
 Some of the directories have some fkag name files with .c .o or .py extension
 Tried to run them but quickly found out that's the worng approach.
 So again used chatgpt'ed the function to find out the type of directory i have
