@@ -34,7 +34,13 @@ flag `pwn.college{kS_qnuqnP-yv1iPRz0fGLRkIObr.ddDM5QDL0MTO0czW}`
 <br><br>
 
 ## Challenge - 4 Redirecting errors
+Hre we learn that we can output multiple aspects in the same line. We jsut need specify the file descriptor number before the pipe `>`
+1 is for standard output and 2 is for errors usually 
 
+For the challenge `/challenge/run > myflag 2> instructions` is to output flag to myflag and instructions to instructions 
+`cat instructions`
+and `cat myflag` to get the flag
+flag `pwn.college{0zmbZ7tW3hEimeZZtCOqUC8kxKG.ddjN1QDL0MTO0czW}`
 <br><br>
 
 ## Challenge - 5 Redisrecting input
