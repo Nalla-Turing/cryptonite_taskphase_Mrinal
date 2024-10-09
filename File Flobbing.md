@@ -30,11 +30,30 @@ flag `pwn.college{A0X4N8rXu6opXH713ky0PDMQmUG.dNjM4QDL0MTO0czW}`
 <br><br>
 
 ## Challenge - 4 Matching paths with []
+`[]` can be used to for the entire path
 
+For the challenge I did `/challenge/run /challenge/files/file_[absh]`
+
+flag `pwn.college{IgyGneGMbspLxaPAe1ha23gcrV7.dRjM4QDL0MTO0czW}`
 <br><br>
 
 ## Challenge - 5 Mixing globs
+For the challenge we have to test the knowledge of the globbin we got.
+So to complete the challenge what I do is `cd /challenge/files` and then `ls -a` to find all the files
+
+Then to get them out i need to see a pattern. What i see is starting letter c,e,p is unique to them 
+ `/challenge/files$ /challenge/run [cep]*` gets the flag
+
+ flag `pwn.college{A8-0optRrCcoJHoh9iWby8kqu51.dVjM4QDL0MTO0czW}`
 <br><br>
 
 ## Challenge - 6 Exclusionary globbing
+In the [] you can add `!` or `^` in he beginning to exclude all the elements matching the inputs in a glob bracket
+
+For the challenge
+`cd /challenge/files` to get into the directory and
+
+` /challenge/files$ /challenge/run [^pwn]* ` gets the flag
+
+flag `pwn.college{cWDwIWzo_Kihoh__l3oy6qwz9ep.dZjM4QDL0MTO0czW}`
 <br><br>
