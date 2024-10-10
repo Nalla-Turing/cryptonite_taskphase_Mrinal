@@ -83,7 +83,7 @@ Flag `pwn.college{IGUjlJUI5kWbfxGT48Giicqi7mW.dFTN1QDL0MTO0czW}`
 
 ## Final Challenge Home Sweet Home
 Things learnd:-
-    Every used has a home directory stored as in the format `/home/hacker` where `/home` is the home directory with all the primary data of different users and `/hacker` being the user
+    Every user has a home directory stored as in the format `/home/hacker` where `/home` is the home directory with all the primary data of different users and `/hacker` being the user
 
     This home directory is shown as `~`, thus signifying our path starting with the home directory.
 
