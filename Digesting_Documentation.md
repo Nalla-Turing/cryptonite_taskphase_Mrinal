@@ -107,8 +107,8 @@ flag `pwn.college{IbZoSGWuJ3G8jfXMmXwPJsERup1.ddjM4QDL0MTO0czW}`
 <br><br>
 
 ## Challenge-7 Help for Builtins
-Ratger than some commands with man pages or help informationn.
-Theer are functions that are buily i the shell itself. These are called `builtins`
+Rather than some commands with man pages or help informationn.
+There are functions that are built in the shell itself. These are called `builtins`
 
 One can now more about the builtins by usig the `help` command or `help |command|` to know more about a specific builtin command.
 
