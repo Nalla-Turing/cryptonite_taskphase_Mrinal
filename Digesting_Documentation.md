@@ -94,13 +94,13 @@ Now to complete the challenge I do `/challenge/challenge --help` getting the out
                                             [-g GIVE_THE_FLAG] [-p]
 
     optional arguments:
-  - h, --help            show this help message and exit
+    - h, --help            show this help message and exit
     --fortune             read your fortune
     -v, --version         get the version number
     -g GIVE_THE_FLAG,   --give-the-flag GIVE_THE_FLAG
-                          get the flag, if given the correct value
+                            get the flag, if given the correct value
     -p, --print-value     print the value that will cause the -g option to
-                          give you the flag
+    give you the flag
 
 After doing `/challenge/challenge -p` and `/challenge/challenge -g GIVE_THE_FLAG ` I get the flag
 flag `pwn.college{IbZoSGWuJ3G8jfXMmXwPJsERup1.ddjM4QDL0MTO0czW}`
