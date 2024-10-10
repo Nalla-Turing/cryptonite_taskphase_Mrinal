@@ -15,7 +15,7 @@ Flag:- `pwn.college{UtMZtvrT2k5lVx1VNOSz4d0Rbvw.dFzN1QDL0MTO0czW}`
 ## Challenge-2 catting absolute paths
 Here we searching for the file in the absolute directory rather than jut hoping it already exists in our currently positioned home directory
 
-`cat \file` is the command
+`cat /file` is the command
 
 Flag `pwn.college{0wHVQ7ryo5CBhFfK0mCrBuSK7Hb.dlTM5QDL0MTO0czW}`
 <br><br>
@@ -43,7 +43,7 @@ Flag:- `pwn.college{QvZTEv0S9NYdiOTdcfJmasI_JsR.ddTM4QDL0MTO0czW}`
 ## Challenge-5 Listing files
 Here learn to use the aforementioned `ls` command used to find contents inside a directory or a path
 
-For the challenge I did `ls \challenge` to find the different files and then run the command after finding it
+For the challenge I did `ls /challenge` to find the different files and then run the command after finding it
 
 Flag `pwn.college{09D_QR_woFg9cKODMKABWi8UowT.dhjM4QDL0MTO0czW}`
 <br><br>
