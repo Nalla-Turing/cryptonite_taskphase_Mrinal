@@ -133,3 +133,11 @@ and trasnfer the rest to | tee (/challenge/planet)
 So I did `/challenge/hack 2> >(/challenge/the) | tee >(/challenge/planet)` and got the flag
 flag `pwn.college{kBNB3hMBHE6G0372nfVsyQ_m-VW.dFDNwYDL0MTO0czW}`
 <br><br>
+
+Some extra that i learned 
+Difference betwee > > and | tee >()
+1st command takes the output and passs it to command in >() but | tee copies the output gives it to command >() and the other part to terminal to be printed or given to some other command.
+
+`command | tee >(command1) >(command2) | command3 | command4`
+How this will work is:-
+It will create a output from command, divide that output into three parts and pass it to command1 command2 and command3. Then the output of command3 is copied and 1 part is given to command4 and the other to terminal.
