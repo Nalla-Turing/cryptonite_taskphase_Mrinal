@@ -43,7 +43,7 @@ and `cat myflag` to get the flag
 flag `pwn.college{0zmbZ7tW3hEimeZZtCOqUC8kxKG.ddjN1QDL0MTO0czW}`
 <br><br>
 
-## Challenge - 5 Redisrecting input
+## Challenge - 5 Redirecting input
 You can redirect input to a file using `<` command.
 
 For the challenge redirect output COLLEGE to PWN
