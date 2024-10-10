@@ -100,8 +100,28 @@ flag `pwn.college{sDUfoxwyp_BPplyyJ1Mf8CbPsMD.dFjM5QDL0MTO0czW}`
 <br><br>
 
 ## Challenge - 10 Writing to multiple programs 
+This is a very imortant command that one must know. 
+Here using chatgpt I learned that there is a major difference between `|` and `>`. It is that > is used to copy and transfer the output of a command to another file like text file. 
+While | is used to trasnfer the output to a second command which will give the said output whenever called, while also maintaining copy of the output another file.
 
+Now the question arises how we proceed when we want to trasnfer the output to two commands? Well for that we have something called *Process Substituion*.
+What this process before tee works, it will create another pipe(or tunnel) that takes the output to the another >(command name) and gives the output. Now when used with multiple command, we will get different output as in accordance to different command effects.
+
+
+For the challenge `/challenge/hack | tee >(/challenge/the) >( /challenge/planet )` gets the programm running.
+Then It gives the output
+    This secret data must directly and simultaneously make it to /challenge/the and
+    /challenge/planet. Don't try to copy-paste it; it changes too fast.
+    137791404183113478
+    Congratulations, you have duplicated data into the input of two programs! Here
+    is your flag:
+    pwn.college{goN3hgy7-pk2yAnBXBFTdtP2_hW.dBDO0UDL0MTO0czW}
+
+flag `pwn.college{goN3hgy7-pk2yAnBXBFTdtP2_hW.dBDO0UDL0MTO0czW}`
 <br><br>
 
 ## Challenge - 11 Split-piping stderr and stdout
+Ok this one was very confusing to complete the challenge I need to take the output from /challenge/hack and separate the stderr and stdout into 2 different commands.
+My first thought was i can Process substitute the output into >(/challenge/planet) for stdout and 2>&1 (/challenge/the) for stderr but doesn't work as | tee only gets the stdout so there is no stderr to convert
+flag `pwn.college{kBNB3hMBHE6G0372nfVsyQ_m-VW.dFDNwYDL0MTO0czW}`
 <br><br>
