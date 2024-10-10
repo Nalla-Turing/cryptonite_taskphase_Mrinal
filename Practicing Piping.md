@@ -115,6 +115,7 @@ Then It gives the output
     137791404183113478
     Congratulations, you have duplicated data into the input of two programs! Here
     is your flag:
+    
     pwn.college{goN3hgy7-pk2yAnBXBFTdtP2_hW.dBDO0UDL0MTO0czW}
 
 flag `pwn.college{goN3hgy7-pk2yAnBXBFTdtP2_hW.dBDO0UDL0MTO0czW}`
@@ -122,6 +123,13 @@ flag `pwn.college{goN3hgy7-pk2yAnBXBFTdtP2_hW.dBDO0UDL0MTO0czW}`
 
 ## Challenge - 11 Split-piping stderr and stdout
 Ok this one was very confusing to complete the challenge I need to take the output from /challenge/hack and separate the stderr and stdout into 2 different commands.
-My first thought was i can Process substitute the output into >(/challenge/planet) for stdout and 2>&1 (/challenge/the) for stderr but doesn't work as | tee only gets the stdout so there is no stderr to convert
+My first thought was i can Process substitute the output into >(/challenge/planet) for stdout and 2>&1 (/challenge/the) for stderr but doesn't work as | tee only gets the stdout so there is no stderr to convert.
+
+My next approach is to convert the stderr before hand then pass it to | tee but then it gives both the commands both output and error so it's a wrong method
+
+After multiple tries of failing i chatgpted different ways the piping system works and found out that we can filter out stderr before hand using 2> and passing to >(/challenge/the)
+and trasnfer the rest to | tee (/challenge/planet)
+
+So I did `/challenge/hack 2> >(/challenge/the) | tee >(/challenge/planet)` and got the flag
 flag `pwn.college{kBNB3hMBHE6G0372nfVsyQ_m-VW.dFDNwYDL0MTO0czW}`
 <br><br>
