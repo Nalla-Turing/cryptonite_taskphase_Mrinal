@@ -1,6 +1,7 @@
 # Pondering PATH
 
-module abouth the PATH variable
+This module teaches about the PATH variable and all the neat tricks that comes with the ability to work and edit them :)
+<br><br><br>
 
 ## Challenge-1 The PATH Variable
 
