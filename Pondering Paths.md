@@ -78,5 +78,5 @@ Now on running `/challenge/run` I get the output:
 ```
 Trying to remove /flag...
 ```
-![Img1](Mod12_Ch4.png)
+![Img1](Image_resources/Mod12_Ch4.png)
 flag `pwn.college{IINH7JgYSL_8RlHjJIKb_DpMCIG.ddzNyUDL0MTO0czW}`
