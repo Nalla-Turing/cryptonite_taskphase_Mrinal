@@ -27,7 +27,7 @@ This challenge teaches us about killing previously running processes that might 
 The `PID` of `/challenge/dont_run` is found by using the `ps` command by: `ps -ef | grep /challenge/dont_run`
 
 This gives the output:
-![Image1](Image_resources\Img1.png)
+![Image1](cryptonite_taskphase_Mrinal/Image_resources/Img1.png)
 
 The process is killed using `kill` by `kill 73`
 
