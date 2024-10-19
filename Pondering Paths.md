@@ -13,6 +13,7 @@ Trying to remove /flag...
 /challenge/run: line 4: rm: No such file or directory
 ```
 flag `pwn.college{A5lfFVmXFOH9Q2LeamYmErzJnCD.dZzNwUDL0MTO0czW}`
+<br><br>
 
 
 ## Challenge-2 Setting PATH
@@ -24,6 +25,7 @@ flag `pwn.college{A5lfFVmXFOH9Q2LeamYmErzJnCD.dZzNwUDL0MTO0czW}`
 Now running `/challenge/run`, gives the flag 
 
 flag `pwn.college{EXNSS4N31LsqhvO2gBER7T4s1Kf.dVzNyUDL0MTO0czW}`
+<br><br>
 
 ## Challenge-3 Adding Commands
 
@@ -53,7 +55,8 @@ I had forgotten to make `win` executable, which I then did using `chmod +x win`
 
 Now on running `/challenge/run` I got the flag 
 
-flag ``
+flag `pwn.college{I5M3_Ddcd8BUl5D6MTYLq89s1Oi.dZzNyUDL0MTO0czW}`
+<br><br>
 
 ## Challenge-4 Hijacking Commands
 
@@ -75,5 +78,5 @@ Now on running `/challenge/run` I get the output:
 ```
 Trying to remove /flag...
 ```
-
-flag ``
+![Img1](Mod12_Ch4.png)
+flag `pwn.college{IINH7JgYSL_8RlHjJIKb_DpMCIG.ddzNyUDL0MTO0czW}`
