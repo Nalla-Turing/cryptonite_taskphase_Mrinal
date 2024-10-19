@@ -83,7 +83,7 @@ Like previous challenges we start by using
 
 Uh oh..... we have to reusme it in the background after suspending it. We `Ctrl-Z` to suspend and `bg` to run it in background.
 
-Now we use `fg` to run it in foreground. getting this
+    Now we use `fg` to run it in foreground. getting this
     /challenge/run
     YES! Great job! I'm now running in the foreground. Hit Enter for your flag!
 
