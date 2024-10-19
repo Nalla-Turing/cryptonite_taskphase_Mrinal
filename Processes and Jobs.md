@@ -36,32 +36,78 @@ flag `pwn.college{M8LsAffQOikaNTnlxo_t4WzJMSn.dJDN4QDL0MTO0czW}`
 <br><br>
 
 ## Challenge-3 Interrupting Processes
-flag ``
+This challenge is about learning how to get rid of the process that's clogging up your terminal!
+
+`/challenge/run` is run first and it gives the output:
+
+    I could give you the flag... but I won't, until this process exits. Remember, you can force me to exit with Ctrl-C. Try it now!
+
+After using the hotkey `Ctrl-C` it gives the flag
+
+flag `pwn.college{kip6l0sz0JGd8r2R8lr3K8RtlID.dNDN4QDL0MTO0czW}`
 <br><br>
 
 ## Challenge-4 Suspending Processes
-flag ``
+The first instance of `/challenge/run` is run.
+
+It is suspended using the hotkey `Ctrl-Z.`
+
+Then after running the next instance of `/challenge/run`, the flag outputted is
+![Image2](Image_resources/Img2.png)
+
+flag `pwn.college{kinV2flQlSFB6Irl9-W0deZPMq1.dVDN4QDL0MTO0czW}`
 <br><br>
 
 ## Challenge-5 Resuming Processes
-flag ``
+Usually, when you suspend processes, you'll want to resume them at some point.
+To do this we have a very handy `fg` command
+
+Just like the previous challenge `/challenge/run` is run and then suspended using `Ctrl-Z`
+
+Then it is resumed using `fg`
+flag `pwn.college{MqFhixDD7lXSB8OOQF921Uo2OpB.dZDN4QDL0MTO0czW}`
 <br><br>
 
 ## Challenge-6 Background Processes
-flag ``
+Just like the previous challenge `/challenge/run` is run and then suspended using `Ctrl-Z`
+
+Then it is resumed in the background using `bg`.
+
+Another instance of `/challenge/run` giving us the flag
+flag `pwn.college{g9lE9C93Y78axMkvM-PQxGgBOJu.ddDN4QDL0MTO0czW}`
 <br><br>
 
 ## Challenge-7 Foreground Processes
-flag ``
+Like previous challenges we start by using 
+`/challenge/run`
+
+Uh oh..... we have to reusme it in the background after suspending it. We `Ctrl-Z` to suspend and `bg` to run it in background.
+
+Now we use `fg` to run it in foreground. getting this
+    /challenge/run
+    YES! Great job! I'm now running in the foreground. Hit Enter for your flag!
+
+    pwn.college{AqvI_HAr0YWzMqRfOAlc_QwYj_J.dhDN4QDL0MTO0czW}
+
+flag `pwn.college{AqvI_HAr0YWzMqRfOAlc_QwYj_J.dhDN4QDL0MTO0czW}`
 <br><br>
 
 ## Challenge-8 Starting Background Processes
-flag ``
+`/challenge/run` needs to be backgrounded without suspending it first. This can be done by appending a `&` to the command:
+
+`/challenge/run &` gives the flag:
+
+flag `pwn.college{IegDNXI3_pPMiGgyCgT9nwsXYUp.dlDN4QDL0MTO0czW}`
 <br><br>
 
 ## Challenge-9 Process Exit Codes
-flag ``
-<br><br>
+The exit-code of `/challenge/get-code` must be accessed and used as an argument for `/challenge/submit-code`.
 
+After running `/challenge/get-code` the exit code is stored in the shell variable `?`
 
-[def]: cryptonite_taskphase_Mrinal/Image_resources/Img1.png
+Therefore `echo $?` prints the exit code which is `36`
+
+`/challenge/submit-code 36` gives the flag
+
+flag `pwn.college{Q-oFGYZlcw0HA-EZ3e33EC-Cmdt.dljN4UDL0MTO0czW}`
+
