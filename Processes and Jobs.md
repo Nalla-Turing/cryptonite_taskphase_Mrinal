@@ -1,4 +1,7 @@
 # Processes and Jobs
+In modern computing, software is split into two categories: operating system kernels and processes.When Linux starts up, it launches an init (short for initializer) process that, in turn, launches a bunch of other processes which launch more processes until, eventually, you are looking at your command line shell, which is also a process!
+
+this module is about learning to view and interact with processes in a number of ways
 <br><br><br>
 
 ## Challenge-1 Listing Processes
