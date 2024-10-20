@@ -90,7 +90,22 @@ flag `pwn.college{kh-_KKtAmRNSYkq-u4lYwGtnlcc.dBTM2QDL0MTO0czW}`
 
 ## Challenge-7 Permission Setting Practice
 NOOOOOOO..... Not again
-flag ``
+OK so it was easier but it was still a pain in the ass
+
+For the first 8 rounds the commands that i had to do was as follows
+    chmod u=w,g=x,o=- /challenge/pwn
+    chmod u=wx,g=rw,o=r /challenge/pwn
+    chmod u=-,g=rw,o=rw /challenge/pwn
+    chmod u=x,g=r,o=rw /challenge/pwn
+    chmod u=rx,g=wx,o=x /challenge/pwn
+    chmod u=wx,g=-,o=x /challenge/pwn
+    chmod u=rwx,g=x,o=rx /challenge/pwn
+    chmod u=w,g=rwx,o=w /challenge/pwn
+
+Then in the last round I changed the permission of `/flag` to readable using
+`chmod u=r /flag` and read the file using `cat /flag` to get
+
+flag `pwn.college{YB9Fd5ErIBTiJ-pe4-TRutjA5iz.dNTM5QDL0MTO0czW}`
 <br><br>
 
 ## Challenge-8 The SUID Bit
