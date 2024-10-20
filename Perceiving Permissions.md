@@ -66,22 +66,22 @@ flag `pwn.college{wEpeQL382Zxt402t-_Bd2jTGaCS.dJTM2QDL0MTO0czW}`
 ## Challenge-6 Permission Tweaking Practice
 Ok this is gonna be a hassle but here we go :)
 We start by `/challenge/run` top get
-![Round1](Image_reources/Round0.png)
+![Round1](Image_resources/Round0.png)
 `chmod u+x,g+x /challenge/pwn` to get
 
-![Round1](Image_reources/Round1.png)
+![Round2](Image_resources/Round1.png)
 `chmod u-r,u-x /challenge/pwn` to get
 
-![Round1](Image_reources/Round2.png)
+![Round3](Image_resources/Round2.png)
 `chmod o+w,o+x /challenge/pwn` to get
 
-![Round1](Image_reources/Round3.png)
+![Round4](Image_resources/Round3.png)
 `chmod u+x,g+w /challenge/pwn` to get
 
-![Round1](Image_reources/Round4.png)
+![Round5](Image_resources/Round4.png)
 ` chmod u-w,o-r,o-w /challenge/pwn` to get
 
-![Round1](Image_reources/Round5.png)
+![Round6](Image_resources/Round5.png)
 And similarly after a few more headaching attempts I get the flag
 Finallly, I run `chmod o-wx /challenge/pwn`  which now changes `/flags` owner to hacker. I make it readable using `chmod u+r /flag` and then read the flag using `cat /flag`
 
